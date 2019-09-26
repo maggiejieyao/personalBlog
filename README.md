@@ -14,10 +14,10 @@ npm i --save express
 ```
 
 **q=> npm gloabl install VS npm local install**
-    ...1) In general, all the package should be install locally, becuase update a global package would make all the project make the new             release, then it might cuase nightmares in maintance, as some package update might break compatibility and so on.
-    ...2) install locally make package aviliable to the current project, which stores all the node modules in the node_modules. This is good         for using modules like: var modules =  require('modules');
-    ...3) A package should be installed globally when it provides an executable command that you run from the shell (CLI), and it’s reused           across projects.
-    ...总结就是，如果这个package可以跨项目重用，比如说ESLint, 那么可以全局安装，否则最好事本地安装， 因为很多package在完成之后会有更新，如果在全局安装，      那么之后的很容易会有confliction，导致project无法正常运行
+    ...1) In general, all the package should be install locally, becuase update a global package would make all the project make the new             release, then it might cuase nightmares in maintance, as some package update might break compatibility and so on...
+    ...2) install locally make package aviliable to the current project, which stores all the node modules in the node_modules. This is good         for using modules like: var modules =  require('modules');..
+    ...3) A package should be installed globally when it provides an executable command that you run from the shell (CLI), and it’s reused           across projects...
+    ...总结就是，如果这个package可以跨项目重用，比如说ESLint, 那么可以全局安装，否则最好事本地安装， 因为很多package在完成之后会有更新，如果在全局安装，      那么之后的很容易会有confliction，导致project无法正常运行..
 
 3. Create an entry js in project
 ```
