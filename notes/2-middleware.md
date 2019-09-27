@@ -4,16 +4,19 @@
 
 Middleware functions are function to access the request object(req)and response object(res), and the next function in the application's request-response cycle. The next function in the Express router, when it invokes, it will excute the next middleware. 
 
+
 1. Install packages required for middleware
 
 ```
 npm i --save morgan body-parser
 ```
 
+
 **q=>what do `morgan` and `body-parser` do?**
 
 `morgan` is used for logging request details.
 `body-parser` extract the entire body portion of an incoming request stream and exposes it on `req.body`
+
 
 2. In `app.js`
 
@@ -30,12 +33,14 @@ app.use(bodyParser.json);
 app.use(bodyParser.urlencoded({ extended: false}));
 ```
 
+
 **Some ES6 new rules: <https://webapplog.com/es6/>**
 
 **Note:** `var x = x || 100` equals to if x has falsy value(like `null`, `undefined`, `0` or `""`), assign x with 100, otherwise keep the current value, same as 
 ```
 var x = x ? x : 100;
 ```
+
 
 3. Add Error-handling middleware
 
@@ -53,6 +58,7 @@ app.use((err, req, res, next) => {
 });
 ```
 
+
 4. set the port variable
 ```
 //get port from enviroment and store in Express
@@ -61,6 +67,7 @@ const port = process.env.PORT || 3000;
 //start server by listening at port 3000
 app.listen(3000, ()=> console.log(`Server running on http://localhost:${port}`));
 ```
+
 
 **Note:** In ES6, double and single quotes can be instead of template literals which are enclosed by the back-tick(``), and
 
