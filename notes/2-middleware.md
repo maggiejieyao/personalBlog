@@ -5,7 +5,7 @@
 Middleware functions are function to access the request object(req)and response object(res), and the next function in the application's request-response cycle. The next function in the Express router, when it invokes, it will excute the next middleware. 
 
 
-1. Install packages required for middleware
+## 1. Install packages required for middleware
 
 ```
 npm i --save morgan body-parser
@@ -18,7 +18,7 @@ npm i --save morgan body-parser
 `body-parser` extract the entire body portion of an incoming request stream and exposes it on `req.body`
 
 
-2. In `app.js`
+## 2. In `app.js`
 
 ```
 //require express module
@@ -42,7 +42,7 @@ var x = x ? x : 100;
 ```
 
 
-3. Add Error-handling middleware
+## 3. Add Error-handling middleware
 
 ```
 //catch 404 and forward to error handler
@@ -59,7 +59,7 @@ app.use((err, req, res, next) => {
 ```
 
 
-4. set the port variable
+## 4. set the port variable
 ```
 //get port from enviroment and store in Express
 const port = process.env.PORT || 3000;
