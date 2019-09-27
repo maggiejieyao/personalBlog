@@ -14,8 +14,8 @@ npm i --save morgan body-parser
 
 **q=>what do `morgan` and `body-parser` do?**
 
-`morgan` is used for logging request details.
-`body-parser` extract the entire body portion of an incoming request stream and exposes it on `req.body`
+- `morgan` is used for logging request details.
+- `body-parser` extract the entire body portion of an incoming request stream and exposes it on `req.body`
 
 
 ## 2. In `app.js`
@@ -99,6 +99,7 @@ not ${2 * a + b}.`);
 
 More usages: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals>
 
+
 ## 5. nodemon for automatically re-starting
 Install nodemon as development dependency:
 
@@ -106,7 +107,16 @@ Install nodemon as development dependency:
 npm install --save-dev nodemon
 ```
 
-**q=> Difference between dev dependency and dependency?**
+In `package.json`
+```
+"scripts":{
+    "start": "nodemon app"
+}
+```
+
+Then run will be npm start
+
+**q=> Difference between `dev dependency` and `dependency`?**
 
 Dev dependencies are modules which are only required during development, while dependencies are modules which are also required at runtime.
 

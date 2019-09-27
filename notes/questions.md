@@ -20,7 +20,7 @@ Middleware functions are function to access the request object(req)and response 
 - `morgan` is used for logging request details.
 - `body-parser` extract the entire body portion of an incoming request stream and exposes it on `req.body`.
 
-## 4. Difference between dev dependency and dependency?**
+## 4. Difference between `dev dependency` and `dependency`?**
 
 Dev dependencies are modules which are only required during development, while dependencies are modules which are also required at runtime.
 
