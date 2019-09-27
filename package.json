@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "personal blog, making notes for coding learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maggiejieyao/personalBlog.git"
+  },
+  "keywords": [
+    "React",
+    "nodejs",
+    "express"
+  ],
+  "author": "Maggie Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maggiejieyao/personalBlog/issues"
+  },
+  "homepage": "https://github.com/maggiejieyao/personalBlog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
