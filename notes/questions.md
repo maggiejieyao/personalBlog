@@ -20,9 +20,16 @@ Middleware functions are function to access the request object(req)and response 
 - `morgan` is used for logging request details.
 - `body-parser` extract the entire body portion of an incoming request stream and exposes it on `req.body`.
 
-## 4. Difference between `dev dependency` and `dependency`?**
+## 4. **Difference between `dev dependency` and `dependency`?**
 
 Dev dependencies are modules which are only required during development, while dependencies are modules which are also required at runtime.
+
+## 5. **Difference between `package.json` and `package-lock.json`?**
+
+- `package.json` records the minimun version you app need. If update the versions of a particular package, the change is not going to be reflected here. And also, it is used for more than dependencies, it defining project properties, description, author & license information, scripts, etc. `package.json` is required for each project.
+
+- `package-lock.json` records the exact version of each installed package, and it will help for user to re-install them. Project cannot only includes `package-lock.json`.
+
 
 
 
