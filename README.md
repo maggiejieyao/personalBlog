@@ -44,6 +44,7 @@ app.get('/', (req, res) => res.send("Hello World!"));
 app.listen(3000, ()=> console.log('Currently listening to port 3000'));
 ```
 5. Run the app with command
+
 ```node app.js```
 
     
